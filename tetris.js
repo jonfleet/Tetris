@@ -3,12 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = Array.from(document.querySelectorAll('.grid div'))
     const ScoreDisplay = document.querySelector('#score')
     const startBtn = document.querySelector('#start-button')
+    const easyBtn = document.querySelector('#difficulty-button-easy')
+    const medBtn = document.querySelector('#difficulty-button-medium')
+    const hardBtn = document.querySelector('#difficulty-button-hard')
+
     const width = 10
     let nextRandom = 0;
     let timerId;
     let score = 0;
-    // console.log(squares)
-    //The Tetrominoes
+    let speed = 1000
+    
+
     const lTetromino =[
         [0, width, width*2, 1],
         [0, width, width+1, width+2],
@@ -67,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[currentPosition + index].classList.add('tetromino')
             squares[currentPosition + index].style.backgroundColor = colors[random]
         })
-        
     }
     
     function undraw(){
@@ -186,10 +190,31 @@ document.addEventListener('DOMContentLoaded', () => {
             draw()
             nextRandom = Math.floor(Math.random()*theTetrominoes.length)
             displaySquares()
-            timerId = setInterval(moveDown, 500)
+            timerId = setInterval(moveDown, speed)
         }
     })
+    easyBtn.addEventListener('click', () => {
+        clearInterval(timerId)
+        speed = 1500;
+        console.log(speed)
+        timerId = setInterval(moveDown, speed)
+    })
 
+    medBtn.addEventListener('click', () => {
+        clearInterval(timerId)
+        speed = 1000;
+        console.log(speed)
+        timerId = setInterval(moveDown, speed)
+    })
+
+    hardBtn.addEventListener('click', () => {
+        clearInterval(timerId)
+        speed = 200
+        console.log(speed)
+        timerId = setInterval(moveDown, speed)
+    })
+    
+    
     // Add Score 
     function addScore(){
         for(let i = 0; i < 199; i+= width){
