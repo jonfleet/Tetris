@@ -3,5 +3,5 @@ This is a game of Tetris I created from the Tetris Tutorial on FreeCodeCamps' Yo
 
 Additional features:
 -Difficulty Feature: Easy, Medium and Hard
--End Game Popup Displaying Score.
--Improved Styling
+-End Game Popup Displaying Score
+-Improved Styling in the browser
