@@ -1,36 +1,111 @@
+
+h3{
+    font-family: 'Orbitron', sans-serif;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(103, 95, 211);
+    border-radius: 5px;
+}
+
+body {
+    background: radial-gradient(rgb(192, 192, 240), rgb(132, 132, 224))
+}
+.header{
+    display: block;
+    /* flex-wrap: nowrap; */
+    text-align: center;
+    /* background-color: black; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
 }
-
 .grid{
     width: 200px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: rgb(192, 192, 240);
+    border-style: solid;
+    border-radius: 5px;
+    /* border-color: black; */
+}
+.grid div{
+    height: 20px;
+    width: 20px;
+    /* border-color: black; */
+    /* border-style: solid; */
+    /* border-width: .5px; */
+    /* background-color: red; */
+}
+
+.grid #grid-bottom{
+    border-color: "";
+    border-style: "";
+    border-width: "";
+    background-color: '';
+}
+.rightside{
+    display: block;
+    margin-left: 5%;
+    /* flex-wrap: nowrap; */
 }
 
 .miniGrid{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 100px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
     background-color: gray;
-}
-
-.grid div{
-    height: 20px;
-    width: 20px;
-    /* background-color: red; */
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 }
 
 .miniGrid div{
     height: 20px;
     width: 20px;
+    /* border-style: solid; */
+    /* border-color: black; */
 }
 
+
+.score{
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin-top: 20%;
+    /* background-color: blue; */
+}
+
+.difficulty{
+    display: block;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5%;
+    text-align: center;
+
+}
+.difficulty button{
+    /* display: block; */
+    /* justify-content: right; */
+    
+}
+
+
+
 .tetromino{
-    background-color: blue;
+    /* border-radius: 2px; */
+    
 }  

@@ -3,16 +3,16 @@
     <title>Tetris</title>
     <meta charset="utf-8">
     <script src="/tetris.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
-    <h3>Score <span id="score">0</span></h3>
-    <button id="start-button">Start/Pause</button>
-    <button id="difficulty-button-easy">Easy</button>
-    <button id="difficulty-button-medium">Medium</button>
-    <button id="difficulty-button-hard">Hard</button>
-
+    <div class="header">
+        <h3>Welcome to Tetris!</h3>
+        <button id="start-button">Start/Pause</button>
+    </div>   
     <div class="container">
         <div class="grid">
             <div></div>
@@ -215,48 +215,63 @@
             <div></div>
             <div></div>
             <div></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
-            <div class='taken' style="background-color: black"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
+            <div class='taken' id="grid-bottom"></div>
         </div>
-        <div class="miniGrid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class='rightside'>
+            <div style="justify-content: center">
+                <div class="miniGrid">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="score">
+                <h3>Score <span id="score">0</span></h3>
+            </div>
+            <div class="difficulty">
+                <h3>Select Difficulty</h3>
+                <div class=''>
+                    <button id="difficulty-button-easy">Easy</button>
+                    <button id="difficulty-button-medium">Medium</button>
+                    <button id="difficulty-button-hard">Hard</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
