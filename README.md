@@ -1,5 +1,5 @@
 
-This is a game of Tetris I created from the Tetris Tutorial on FreeCodeCamps' Youtube page to help me better understand javascript in the browser. 
+Created from the Tetris Tutorial on FreeCodeCamps' Youtube page to help me better understand javascript in the browser. 
 
 Additional features:
 
